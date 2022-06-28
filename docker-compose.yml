@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  dmr:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    # required for host.docker.internal to work on linux
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - CENTOPS_HOST=http://host.docker.internal:7191

@@ -1,4 +1,9 @@
-1. Add ngx_http_js_module import in /etc/nginx/nginx.conf
+## Run with docker
+1. Run CentOps
+2. ``docker-compose up``
+
+## Run without docker
+2. Add ngx_http_js_module import in /etc/nginx/nginx.conf
 ```
 load_module modules/ngx_http_js_module.so;
 
